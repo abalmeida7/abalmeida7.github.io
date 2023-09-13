@@ -20,33 +20,35 @@ html {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background-color: #424242;
+    height: 100%;    
+    background: url('../images/sky.jpg');
+    background-position: center;
+    background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 80% 100%, 20% 100%, 0 80%);
     transition: 1s ease-in-out;
-    z-index: 1;
+    z-index: 1;    
     display: flex;
 }
 
 .header-section h1 {
-    color: #F3CE75;
-    font: 300 100px 'Josefin Sans', sans-serif;
+    color: #FDF5F3;
+    font: 300 500% 'Josefin Sans', sans-serif;
     position: fixed;
     top: 1%;
     left: 5%;
-    transition: 1s;
+    transition: 1s ease-in-out;
 }
 
 .header-section.collapsed-left {
     bottom: 85%;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 10% 100%, 0 90%);
-    transition: 1s;
+    transition: 1s ease-in-out;    
 }
 
 .header-section.collapsed-right {
     bottom: 85%;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 10% 100%, 0 90%);
-    transition: 1s;
+    transition: 1s ease-in-out;
 }
 
 .header-section h1.collapsed {
@@ -67,7 +69,7 @@ html {
 }
 
 .left-pane {
-    background-color: #A07042;
+    background-color: #30283C;
 }
 
 .left-pane.expanded {
@@ -75,7 +77,7 @@ html {
 }
 
 .right-pane {
-    background-color: #6B5743;
+    background-color: #181B21;
 }
 
 .right-pane.expanded {
@@ -87,13 +89,13 @@ html {
     position: absolute;
     bottom: 2.5%;
     right: 2.5%;
-    color: #F3CE75;
+    color: #FDF5F3;
     transition: 1s ease-in-out;
 }
 
 .material-symbols-outlined.right.expanded {
-    font-size: 50px !important;    
-    bottom: 85%;    
+    font-size: 50px !important;
+    bottom: 85%;
 }
 
 .material-symbols-outlined.left {
@@ -101,13 +103,13 @@ html {
     position: absolute;
     bottom: 2.5%;
     left: 2.5%;
-    color: #F3CE75;
+    color: #FDF5F3;
     transition: 1s ease-in-out;
 }
 
 .material-symbols-outlined.left.expanded {
     font-size: 50px !important;
-    bottom: 85%;        
+    bottom: 85%;
 }
 
 /* Color Palette (for reference, if needed)
@@ -117,4 +119,12 @@ A07042
 6B5743
 424242
 000000
+*/
+
+/* Color Palette (for reference, if needed)
+FDF5F3
+CA735D
+8D4749
+30283C
+181B21
 */
